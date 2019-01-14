@@ -1,0 +1,333 @@
+@font-face {
+font-family: 'Myriad Pro Regular';
+src: url('../fonts/regular/MyriadPro-Regular.eot');
+src: url(../fonts/regular/'MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/regular/MyriadPro-Regular.woff') format('woff'),
+url('../fonts/regular/MyriadPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Myriad Pro Light';
+src: url('../fonts/light/MyriadPro-Light.eot');
+src: url('../fonts/light/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+url('../fonts/light/MyriadPro-Light.woff') format('woff'),
+url('../fonts/light/MyriadPro-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #3b3b3e;
+	font-family: 'Myriad Pro Regular';
+}
+h2{
+	font-family: 'Myriad Pro Light';
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 300;
+	font-size: 50px;
+	letter-spacing: 2px;
+}
+a{
+	outline: none;
+}
+a:hover{
+	text-decoration: none;
+}
+p{
+	color: #5b5b5b;
+	font-size: 15px;
+	font-weight: 700;
+}
+.element{
+	width: 100%;
+}
+.products {
+	max-width: 100%;
+	padding-left: 75px;
+	padding-top: 60px;
+	height: 950px;
+	background: url('../img/bg/Brick-Background.png') no-repeat  center;
+}
+.product{
+	display: inline-block;
+	background-color: #fff;
+	padding-bottom: 10px;
+	padding: 0px 25px 5px 25px;
+	margin-top: 20px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+.hover-buttons{
+	opacity: 0;
+	height: 0;	
+}
+.product:hover .hover-buttons{
+	display:flex;
+	opacity: 1;
+	height: 48px;
+	transition: 0.7s;
+}
+.product:hover .product-name{
+	color: #ea6d46;
+}
+
+
+.laminat-product{
+	padding-bottom: 7px;
+}
+.picture{
+	position: relative;
+	top: -15px;
+	display: block;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #e8e8e8;
+	margin-top: 0;
+	
+}
+
+.sale{
+	position: relative;
+	top: -15px;
+	left: -15px;
+	background-color: #fff;
+	width: 95px;
+	height: 40px;
+	padding: 4px 5px 2px 3px;
+	border: 3px solid #ea6d46;
+	box-shadow: 5px ;
+
+}
+.sales-treugolnik{
+	position: relative;
+	border: 15px solid transparent;	border-top: 0px solid #ea6d46; border-right: 15px solid #ea6d46;
+	top: 9.2px;
+	left: -72.5px;
+}
+.products-slider{
+	margin-top: 50px;
+	margin-right: 100px;
+}
+.slick-active{
+	outline: none;
+}
+
+.prev{
+	top: 510px;
+	left: 43%;
+	position: absolute;
+	z-index: 99;
+	width: 70px;
+	height: 70px;
+	border: none;
+	background: url(../img/NextPage.svg) center no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+
+}
+.next{
+	top: 510px;
+	left: 53%;
+	position: absolute;
+	z-index: 99;
+	width: 70px;
+	height: 70px;
+	border: none;
+	background: url(../img/NextPage2.svg) center no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	
+}
+.next:focus{
+	outline: none;
+}
+.prev:focus{
+	outline: none;
+}
+.next:hover{
+	opacity: 0.6;
+}
+.prev:hover{
+	opacity: 0.6;
+}
+.counter{
+	color: #fff;
+	font-family: 'Myriad Pro Light';
+	position: absolute;
+	top: 705px;
+	left: 48.7%;
+}
+.super-price{
+	color: #ea6d46;
+	margin: 0;
+}
+
+
+.product-name{
+	height: 16px;
+	margin-left: 3px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	line-height: 18px;
+
+}
+.product-price{
+	display: flex;
+	margin-left: 5px;
+	margin-top: 55px;
+	height: 30px;
+}
+
+.code-product {
+	font-weight: 500;
+	font-size: 11px;
+	color: #9a9a9a;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+.code-product-laminat{
+	font-weight: 500;
+	font-size: 11px;
+	color: #9a9a9a;
+	margin-top: 5px;
+	margin-bottom: 0;
+	width: 90px;
+}
+
+.prices{
+    margin-bottom: 5px;
+	margin-left: 50px;
+}
+.prices-laminat{
+	margin-bottom: 5px;
+	margin-left: 25px;
+}
+
+.prices-laminat span{
+	text-decoration: line-through;
+	color: #c6c6c6;
+	font-size: 12px;
+	font-weight: 400;
+	margin-left: 10px;
+}
+.prices span{
+	text-decoration: line-through;
+	color: #c6c6c6;
+	font-size: 12px;
+	font-weight: 400;
+	margin-left: 10px;
+}
+.avaible-type{
+	display: flex;
+}
+ 
+.avaible {
+	background-color: #bbd700;
+	color: #fff;
+	font-size: 10px;
+	height: 18px;
+	padding: 1px 4px 0 4px;
+	margin-bottom: 0;
+	margin-left: 5px;
+	font-weight: 700;
+	text-decoration: none;
+	box-shadow: 0.5px 0.5px rgba(255,255,100, -6);
+}
+.avaible:hover{
+	text-decoration: none;
+	color: #fff;
+	filter: brightness(95%);
+}
+.type-laminat {
+	position: relative;
+	top: -5px;
+	margin-left: 101px;
+	margin-bottom: 0;
+	font-size: 11px;
+	font-weight: 500;
+	color: #646368;
+}
+ p.big-summ{
+	margin-left: 115px;
+}
+.type {
+	margin-left: 105px;
+	margin-bottom: 0;
+	font-size: 11px;
+	font-weight: 500;
+	color: #646368;
+}
+sup{
+	position: relative;
+	top: -10px;
+	left: -22px;
+	color: #9a9a9a;
+	font-weight: 400;
+}
+sub{
+	top: -18px;
+	left: 1px;
+}
+.hover-buttons{
+	display: flex;
+	margin-top: 30px;
+}
+.buy-button{
+	margin-right: 30px;
+	margin-left: 25px;
+	padding: 12px 22px;
+	border-radius: 50px;
+	background-color: #f5521e;
+	width: 130px;
+}
+.buy-button:hover{
+	filter: brightness(85%);
+}
+.liked:hover{
+	filter: brightness(85%);
+}
+.buy-it{
+	color: #fff;
+}
+.buy-button img{
+	float: right;
+	margin-left: 10px;
+	
+}
+
+
+/*@media screen and (max-width: 1440px){
+.sale{
+	position: relative;
+	top: -15px;
+	left: 9px;
+	background-color: #fff;
+	width: 95px;
+	height: 40px;
+	padding: 4px 5px 2px 3px;
+	border: 3px solid #ea6d46;
+	box-shadow: 5px ;
+
+}
+.sales-treugolnik{
+	position: relative;
+	border: 15px solid transparent;	border-top: 0px solid #f5521e; border-right: 13px solid #f5521e;
+	top: 9px;
+	left: -74px;
+}
+.product-name{
+	font-size: 14px;
+}
+}
+@media screen and (max-width: 1073px){
+.product .slick-current{
+	width: 300px;
+}
+}*/
+
+
+
